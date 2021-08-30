@@ -18,7 +18,7 @@ $(function() {
         pwd: [/^[\S]{6,12}$/, "密码必须6到12位，且不能出现空格"],
         // 校验密码是否一致
         repwd: function(value) {
-            // 拿到的事确认密码框的内容 需要进行一次比较
+            // 拿到的是确认密码框的内容 需要进行一次比较
             var pwd = $(".reg-box [name=password]").val();
             if (pwd != value) {
                 return "两次密码不一致";
