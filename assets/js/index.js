@@ -59,14 +59,14 @@ function renderAvatar(user) {
     // 2.设置欢迎文本
     $("#welcome").html("欢迎&nbsp;&nbsp;" + name);
     // 3.按需渲染用户头像
-    if (user.pic != null) {
+    if (user.user_pic != null) {
         // 3.1 渲染图片头像
-        $(".layui-nav-img").attr("src", user.user.pic).show();
+        $(".layui-nav-img").attr("src", user.user_pic).show();
         $(".text-avatar").hide();
     } else {
         // 3.2 渲染文本头像
         $(".layui-nav-img").hide();
         var first = name[0].toUpperCase();
-        $(".text-avatar").html(first).show;
+        $(".text-avatar").html(first).show();
     }
 }
